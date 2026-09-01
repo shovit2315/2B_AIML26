@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Object</title>
+
+    <script>
+        
+        let student = {
+            first: "Shovit",
+            last: "Sharma",
+            city: "Ghaziabad",
+            pincode: 201009,
+
+            subject: ["web dev", "c++", "java"],
+
+            salary: function() {
+                document.write("Salary<br>");
+            }
+        };
+
+        console.log(student.first);
+        console.log(student.last);
+        console.log(student.subject[0]);
+
+        student.salary();
+
+
+        
+        let student2 = new Object();
+
+        student2.name = "Shovit";
+        student2.pincode = 201009;
+
+        student2.salary = function() {
+            document.write("Student 2 Salary");
+        };
+
+        console.log(student2.name);
+        console.log(student2.pincode);
+
+        student2.salary();
+
+    </script>
+</head>
+
+<body>
+</body>
+</html>
