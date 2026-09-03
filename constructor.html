@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Object</title>
+
+    <script>
+        function Student(name, rollnumber, city) {
+            this.name = name;
+            this.rollnumber = rollnumber;
+            this.city = city;
+
+            this.display = function() {
+                console.log(this.name);
+            };
+        }
+
+        let s1 = new Student("Shovit", 1, "Ghaziabad");
+        let s2 = new Student("Sarthak", 2, "Delhi");
+
+        s1.display();
+        s2.display();
+    </script>
+</head>
+
+<body>
+</body>
+</html>
